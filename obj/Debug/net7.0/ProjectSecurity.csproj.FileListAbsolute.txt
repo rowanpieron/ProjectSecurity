@@ -1,0 +1,15 @@
+C:\Users\rowan\Source\Repos\ProjectSecurity\bin\Debug\net7.0\ProjectSecurity.exe
+C:\Users\rowan\Source\Repos\ProjectSecurity\bin\Debug\net7.0\ProjectSecurity.deps.json
+C:\Users\rowan\Source\Repos\ProjectSecurity\bin\Debug\net7.0\ProjectSecurity.runtimeconfig.json
+C:\Users\rowan\Source\Repos\ProjectSecurity\bin\Debug\net7.0\ProjectSecurity.dll
+C:\Users\rowan\Source\Repos\ProjectSecurity\bin\Debug\net7.0\ProjectSecurity.pdb
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.csproj.AssemblyReference.cache
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.AssemblyInfoInputs.cache
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.AssemblyInfo.cs
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.csproj.CoreCompileInputs.cache
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.dll
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\refint\ProjectSecurity.dll
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.pdb
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ProjectSecurity.genruntimeconfig.cache
+C:\Users\rowan\Source\Repos\ProjectSecurity\obj\Debug\net7.0\ref\ProjectSecurity.dll
