@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rowan\\Source\\Repos\\ProjectSecurity\\ProjectSecurity.csproj": {}
+    "C:\\Users\\rowan\\source\\repos\\ProjectSecurity\\ProjectSecurity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rowan\\Source\\Repos\\ProjectSecurity\\ProjectSecurity.csproj": {
+    "C:\\Users\\rowan\\source\\repos\\ProjectSecurity\\ProjectSecurity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rowan\\Source\\Repos\\ProjectSecurity\\ProjectSecurity.csproj",
+        "projectUniqueName": "C:\\Users\\rowan\\source\\repos\\ProjectSecurity\\ProjectSecurity.csproj",
         "projectName": "ProjectSecurity",
-        "projectPath": "C:\\Users\\rowan\\Source\\Repos\\ProjectSecurity\\ProjectSecurity.csproj",
+        "projectPath": "C:\\Users\\rowan\\source\\repos\\ProjectSecurity\\ProjectSecurity.csproj",
         "packagesPath": "C:\\Users\\rowan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rowan\\Source\\Repos\\ProjectSecurity\\obj\\",
+        "outputPath": "C:\\Users\\rowan\\source\\repos\\ProjectSecurity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rowan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\C:\\Users\\rowan\\Source\\Repos\\ProjectSecurity",
+  "SelectedNode": "\\ProjectSecurity.sln",
   "PreviewInSolutionExplorer": false
 }
