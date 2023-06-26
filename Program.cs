@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TaakbeheerApp
 {
-    class Task
+   public class Task
     {
         public string Title { get; set; }
         public string Description { get; set; }

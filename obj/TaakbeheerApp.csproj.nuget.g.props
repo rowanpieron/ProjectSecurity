@@ -12,8 +12,4 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\rowan\.nuget\packages\" />
   </ItemGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\rowan\.nuget\packages\xunit.analyzers\1.0.0</Pkgxunit_analyzers>
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\rowan\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
-  </PropertyGroup>
 </Project>
