@@ -72,9 +72,12 @@ namespace TaakbeheerApp
             Console.WriteLine("Takenlijst:");
             for (int i = 0; i < tasks.Count; i++)
             {
-                Console.WriteLine(i + 1 + ". " + tasks[i].Title);
+                Task task = tasks[i];
+                string status = task.IsCompleted ? "Voltooid" : "Niet voltooid";
+                Console.WriteLine($"{i + 1}. {task.Title} - {status}");
             }
         }
+
 
         public Task GetTaskByIndex(int index)
         {
@@ -120,15 +123,24 @@ namespace TaakbeheerApp
                         taskManager.AddTask(title, description, deadline, assignedUser);
                         break;
                     case "2":
-                        Console.Write("Voer de naam van de taak in die je wilt markeren als voltooid: ");
-                        string taskToMark = Console.ReadLine();
-                        taskManager.MarkTaskAsCompleted(taskToMark);
+                        taskManager.DisplayTasks();
+                        Console.Write("Kies het nummer van de taak die je wilt markeren als voltooid: ");
+                        int taskIndex = int.Parse(Console.ReadLine()) - 1;
+                        Task selectedTask = taskManager.GetTaskByIndex(taskIndex);
+                        if (selectedTask != null)
+                        {
+                            taskManager.MarkTaskAsCompleted(selectedTask.Title);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ongeldig taaknummer. Probeer opnieuw.");
+                        }
                         break;
                     case "3":
                         taskManager.DisplayTasks();
                         Console.Write("Kies het nummer van de taak waar je een notitie aan wilt toevoegen: ");
-                        int taskIndex = int.Parse(Console.ReadLine()) - 1;
-                        Task selectedTask = taskManager.GetTaskByIndex(taskIndex);
+                        taskIndex = int.Parse(Console.ReadLine()) - 1;
+                        selectedTask = taskManager.GetTaskByIndex(taskIndex);
                         if (selectedTask != null)
                         {
                             Console.Write("Voer de notitie in: ");
