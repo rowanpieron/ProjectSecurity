@@ -1,0 +1,15 @@
+C:\Users\rowan\source\repos\ProjectSecurity\bin\Debug\net6.0\TaakbeheerApp.exe
+C:\Users\rowan\source\repos\ProjectSecurity\bin\Debug\net6.0\TaakbeheerApp.deps.json
+C:\Users\rowan\source\repos\ProjectSecurity\bin\Debug\net6.0\TaakbeheerApp.runtimeconfig.json
+C:\Users\rowan\source\repos\ProjectSecurity\bin\Debug\net6.0\TaakbeheerApp.dll
+C:\Users\rowan\source\repos\ProjectSecurity\bin\Debug\net6.0\TaakbeheerApp.pdb
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.csproj.AssemblyReference.cache
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.AssemblyInfoInputs.cache
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.AssemblyInfo.cs
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.csproj.CoreCompileInputs.cache
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.dll
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\refint\TaakbeheerApp.dll
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.pdb
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\TaakbeheerApp.genruntimeconfig.cache
+C:\Users\rowan\source\repos\ProjectSecurity\obj\Debug\net6.0\ref\TaakbeheerApp.dll

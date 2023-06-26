@@ -3,13 +3,14 @@ using System.Collections.Generic;
 
 namespace TaakbeheerApp
 {
-   public class Task
+    public class Task
     {
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime Deadline { get; set; }
         public string AssignedUser { get; set; }
         public bool IsCompleted { get; set; }
+        public List<string> Notes { get; set; }
 
         public Task(string title, string description, DateTime deadline, string assignedUser)
         {
@@ -18,10 +19,11 @@ namespace TaakbeheerApp
             Deadline = deadline;
             AssignedUser = assignedUser;
             IsCompleted = false;
+            Notes = new List<string>();
         }
     }
 
-    class TaskManager
+    public class TaskManager
     {
         private List<Task> tasks;
 
@@ -51,13 +53,13 @@ namespace TaakbeheerApp
             }
         }
 
-        public void UpdateTaskStatus(string title, bool isCompleted)
+        public void AddNoteToTask(string title, string note)
         {
             Task task = tasks.Find(t => t.Title == title);
             if (task != null)
             {
-                task.IsCompleted = isCompleted;
-                Console.WriteLine("Taakstatus bijgewerkt: " + title);
+                task.Notes.Add(note);
+                Console.WriteLine("Notitie toegevoegd aan taak: " + title);
             }
             else
             {
@@ -68,10 +70,19 @@ namespace TaakbeheerApp
         public void DisplayTasks()
         {
             Console.WriteLine("Takenlijst:");
-            foreach (Task task in tasks)
+            for (int i = 0; i < tasks.Count; i++)
             {
-                Console.WriteLine("- " + task.Title);
+                Console.WriteLine(i + 1 + ". " + tasks[i].Title);
             }
+        }
+
+        public Task GetTaskByIndex(int index)
+        {
+            if (index >= 0 && index < tasks.Count)
+            {
+                return tasks[index];
+            }
+            return null;
         }
     }
 
@@ -89,8 +100,9 @@ namespace TaakbeheerApp
                 Console.WriteLine("\nWat wil je doen?");
                 Console.WriteLine("1. Taak toevoegen");
                 Console.WriteLine("2. Taak markeren als voltooid");
-                Console.WriteLine("3. Taken weergeven");
-                Console.WriteLine("4. Afsluiten");
+                Console.WriteLine("3. Notitie toevoegen aan taak");
+                Console.WriteLine("4. Taken weergeven");
+                Console.WriteLine("5. Afsluiten");
 
                 string choice = Console.ReadLine();
 
@@ -114,8 +126,24 @@ namespace TaakbeheerApp
                         break;
                     case "3":
                         taskManager.DisplayTasks();
+                        Console.Write("Kies het nummer van de taak waar je een notitie aan wilt toevoegen: ");
+                        int taskIndex = int.Parse(Console.ReadLine()) - 1;
+                        Task selectedTask = taskManager.GetTaskByIndex(taskIndex);
+                        if (selectedTask != null)
+                        {
+                            Console.Write("Voer de notitie in: ");
+                            string note = Console.ReadLine();
+                            taskManager.AddNoteToTask(selectedTask.Title, note);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ongeldig taaknummer. Probeer opnieuw.");
+                        }
                         break;
                     case "4":
+                        taskManager.DisplayTasks();
+                        break;
+                    case "5":
                         running = false;
                         break;
                     default:
