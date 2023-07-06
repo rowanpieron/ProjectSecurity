@@ -25,7 +25,6 @@ jobs:
       - name: Deploy to test environment
         run: |
           # Voeg hier commando's toe om de app naar een testomgeving te implementeren
-          # Bijvoorbeeld, het implementeren naar een staging server of een aparte testomgeving
 
       - name: Run integration tests
         run: dotnet test --configuration Release --no-build --filter FullyQualifiedName~IntegrationTest
