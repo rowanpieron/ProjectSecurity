@@ -1,4 +1,4 @@
-name: Deploy
+name: Deployment Pipeline
 
 on:
   push:
@@ -7,28 +7,29 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    needs: ci
+    runs-on: windows-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.x
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '7.0.x' # Pas dit aan naar de juiste versie van .NET Core
 
-    - name: Restore NuGet packages
-      run: dotnet restore
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./publish
 
-    - name: Build
-      run: dotnet build --configuration Release
+      - name: Deploy to test environment
+        run: |
+          # Voeg hier commando's toe om de app naar een testomgeving te implementeren
+          # Bijvoorbeeld, het implementeren naar een staging server of een aparte testomgeving
 
-    - name: Run tests
-      run: dotnet test --no-restore --verbosity normal
+      - name: Run integration tests
+        run: dotnet test --configuration Release --no-build --filter FullyQualifiedName~IntegrationTest
 
-    - name: Publish artifact
-      run: dotnet publish --configuration Release --output ./publish
+      - name: Deploy to production environment
+        run: |
 
-    - name: Deploy to server
-      # Voeg hier de code toe om de applicatie naar je server te implementeren
